@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 import Character from '../components/character/Character';
 import { getCharacter } from '../services/avatarApi';
 
@@ -20,9 +20,11 @@ export default class Details extends React.Component {
         const { loading, character } = this.state;
         return (
             <div>
-                <Link to="/">
-                    List
-                </Link>
+                <Router>
+                    <Link to="/">
+                        List
+                    </Link>
+                </Router>
                 {loading &&
                     <h2>Loading...</h2>
                 }
