@@ -4,6 +4,8 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import List from '../../containers/List';
+import Details from '../../containers/List';
 
 export default function App() {
   return (
