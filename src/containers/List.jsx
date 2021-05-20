@@ -2,7 +2,7 @@ import React from 'react';
 import { getCharacters } from '../services/avatarApi';
 import Characters from '../components/character/Characters';
 
-export default class List extends Component {
+export default class List extends React.Component {
     state = {
         loading: true,
         characters: [],
