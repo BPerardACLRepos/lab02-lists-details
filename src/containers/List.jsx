@@ -1,5 +1,6 @@
 import React from 'react';
 import { getCharacters } from '../services/avatarApi';
+import Characters from '../components/character/Characters';
 
 export default class List extends Component {
     state = {
